@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class FileHandler {
     File input;
     File output;
-    public FileHandler() {
+    public FileHandler(String projectName) {
         try {
-            this.input = new File("IO/input.txt");
-            this.output = new File("IO/output.txt");
+            this.input = new File(projectName + "/IO/input.txt");
+            this.output = new File(projectName + "/IO/output.txt");
         }
         catch(NullPointerException e) {
             System.err.print("Nombre del archivo invalido.");
