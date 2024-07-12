@@ -8,8 +8,8 @@ public class FileHandler {
     File output;
     public FileHandler(String projectName) {
         try {
-            this.input = new File(projectName + "/IO/Preparing.in");
-            this.output = new File(projectName + "/IO/Preparing.out");
+            this.input = new File(projectName + "/IO/Ternary.in");
+            this.output = new File(projectName + "/IO/Ternary.out");
         }
         catch(NullPointerException e) {
             System.err.print("Nombre del archivo invalido.");
